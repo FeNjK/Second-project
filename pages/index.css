@@ -1,17 +1,62 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
-@import url(../blocks/page/page.css); 
-@import url(../blocks/header/header.css);
+body, header, footer, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link, ul, li, img, article {
+  border: 1px solid rgba(250, 50, 50, 0.7);
+}
 
-@import url(../blocks/lead/lead.css);
+@font-face {
+  src:
+  url(/vendor/fonts/Inter-Regular.woff2) format('woff2'),
+  url(/vendor/fonts/Inter-Regular.woff) format('woff'),
+  url(/vendor/fonts/Inter-Regular.ttf) format('truetype');
+  font-family: Inter;
+  font-weight: normal;
+}
 
-@import url(../blocks/intro/intro.css);
+@font-face {
+  src:
+  url(/vendor/fonts/Inter-Bold.woff2) format('woff2'),
+  url(/vendor/fonts/Inter-Bold.woff) format('woff'),
+  url(/vendor/fonts/Inter-Bold.ttf) format('truetype');
+  font-family: Inter;
+  font-weight: bold;
+}
 
-@import url(../blocks/photo-grid/photo-grid.css);
+.page {
+  min-width: 1280px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  padding: 0;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Inter';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  background-color: #2A2C2F;
+}
 
-@import url(../blocks/places/places.css);
+.header {
+  height: 52px;
+  display: flex;
+  flex-basis: 320px;
+  align-items: flex-start;
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  padding-top: 28px;
+}
 
-@import url(../blocks/cover/cover.css);
-
-@import url(../blocks/footer/footer.css);
-
+.header__logo {
+  width: 176px;
+  height: 52px;
+  top: 30px;
+  left: 64px;
+  position: absolute;
+  z-index: 4;
+}
