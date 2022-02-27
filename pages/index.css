@@ -75,7 +75,6 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   font-weight: normal;
   font-size: 1.5rem;
   line-height: 28px;
-  color: #FFFFFF;
 }
 
 @media screen and (max-width: 320px) {
@@ -90,12 +89,17 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   color: #FFFFFF;
 }
  
-.page__links:hover {/* для микса*/
-  opacity: 0.65;
-  transition-duration: 0.2s;
+.page__links:hover {
+  opacity: 0.8;
+  transition-duration: 0.25s;
   transition-timing-function: ease;
   cursor: pointer;
   text-decoration: underline;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .content {
@@ -108,7 +112,7 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  overflow: hidden;
+  padding: 0;
 }
 
 .lead__title {
@@ -118,7 +122,6 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   font-weight: 900;
   text-align: center;
   margin: 56px auto 0;
-  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1024px) {
@@ -141,7 +144,6 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   font-weight: normal;
   text-align: center;
   margin: 32px auto 64px;
-  color: #FFFFFF;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -167,18 +169,52 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
 .lead__image {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
   object-fit: cover;
   object-position: center;
 }
 
 .lead__caption {
-  max-width: 600px;
   font-size: 0.625rem;
   line-height: 14px;
   font-weight: normal;
-  margin: 8px 0;
-  color: #FFFFFF;
-
+  display: inline-block;
+  margin: 8px 0 0;
+  align-items: flex-start;
 }
 
+.intro {
+  max-width: 984px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+.places {
+  max-width: 984px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cover {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cover__background {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+}
