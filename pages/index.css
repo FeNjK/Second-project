@@ -180,6 +180,7 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   font-size: 10px;
   line-height: 14px;
   font-weight: normal;
+  text-transform: uppercase;
   display: inline-block;
   margin: 8px 0 0;
   align-items: flex-start;
@@ -247,6 +248,7 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   max-width: 690px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin: 33px 0 0;
   padding: 0;
   list-style: none;
@@ -302,28 +304,126 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .places {
   max-width: 984px;
   display: flex;
+  list-style: none;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 92px auto 0;
   padding: 0;
 }
+
+.place {
+  display: grid;
+  grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  row-gap: 48px;
+  column-gap: 40px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+.place:last-of-type {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.place__title {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  max-width: 460px;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  text-align: start;
+  margin: 0;
+}
+
+.place__website {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.place__url-heading {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  text-align: start;
+  margin: 0;
+}
+
+.place__link {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+  text-align: start;
+  margin: 12px 0 0;
+}
+
+.place__image {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  max-height: 460px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.place__description {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.place__paragraph {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.place__paragraph:last-of-type {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cover {
   max-width: 1184px;
