@@ -155,6 +155,7 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .lead__subtitle {
+    max-width: 600px;
     margin: 32px auto 56px;
   }
 }
@@ -199,10 +200,10 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
 }
 
 .intro__title {
-  max-width: 720px;
+  max-width: 690px;
   font-size: 54px;
   line-height: 58px;
-  font-weight: 900;
+  font-weight: bold;
   text-align: start;
   margin: 92px 0 0;
 }
@@ -271,6 +272,46 @@ body, header, footer, svg, section, nav, div, h1, h2, h3, h4, h5, h6, p, a, link
     margin: 33px 16px 0;
   }
 }
+
+.photo-grid {
+  max-width: 1184px;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 16px;
+  margin: 92px auto 0;
+  padding: 0;
+}
+
+.photo-grid__item {
+  width: 100%;
+  display: list-item;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .photo-grid {
+    margin: 88px 24px 0;
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo-grid {
+    margin: 64px 16px 0;
+    gap: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
