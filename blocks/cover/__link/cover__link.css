@@ -1,5 +1,5 @@
 .cover__link {
-  background-image: url(/blocks/cover/__link/cover-trains.jpg);
+  background-image: url(cover-trains.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
