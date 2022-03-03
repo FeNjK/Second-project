@@ -1,22 +1,20 @@
-.place__website {
+.place__description {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
   margin: 0;
   padding: 0;
 }
 
 @media screen and (max-width: 767px) {
-  .place__website {
+  .place__description {
     grid-column-start: 1;
     grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
     margin: 0 16px;
     padding: 0;
   }
